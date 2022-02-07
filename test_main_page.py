@@ -2,6 +2,7 @@
 
 pytest -v --tb=line --language=en test_main_page.py
 pytest -v --tb=line test_main_page.py
+pytest -s -v --tb=line test_main_page.py
 
 """
 
