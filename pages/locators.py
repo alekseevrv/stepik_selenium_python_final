@@ -15,4 +15,4 @@ class ProductPageLocators:
     NAME_BOOK = (By.XPATH, "//div[contains(@class,'product_main')]/child::h1")
     NAME_BOOK_BASKET = (By.XPATH, "//div[contains(@class,'alertinner')]/child::strong[1]")
     PRICE_BOOK = (By.XPATH, "//div[contains(@class,'product_main')]/child::p[1]")
-    PRICE_BOOK_BASKET = (By.XPATH, "//div[contains(@class,'alertinner')]/child::p[1]")
+    PRICE_BOOK_BASKET = (By.XPATH, "//div[contains(@class,'alertinner')]/child::p/strong")

@@ -11,12 +11,12 @@ class ProductPage(BasePage):
         name_book = self.browser.find_element(*ProductPageLocators.NAME_BOOK)
         name_book_basket = self.browser.find_element(*ProductPageLocators.NAME_BOOK_BASKET)
 
-        assert name_book_basket.text.find(name_book.text) != -1, \
+        assert name_book_basket.text == name_book.text, \
             "Product name does not match the product added"
 
     def valid_price_book(self):
         price_book = self.browser.find_element(*ProductPageLocators.PRICE_BOOK)
         price_book_basket = self.browser.find_element(*ProductPageLocators.PRICE_BOOK_BASKET)
 
-        assert price_book_basket.text.find(price_book.text) != -1, \
+        assert price_book_basket.text == price_book.text, \
             "The price of the cart does not match the price of the product"
