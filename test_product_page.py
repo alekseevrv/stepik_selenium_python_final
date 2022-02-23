@@ -27,6 +27,7 @@ from .pages.product_page import ProductPage
      "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer9"
      ]
 )
+@pytest.mark.need_review
 def test_guest_can_add_product_to_basket(browser, link):
     print(link)
 
